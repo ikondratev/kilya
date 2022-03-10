@@ -1,5 +1,11 @@
 class Kilya
-  def self.say_hi
-    puts "Hello i'm kIlya"
+  class << self
+    def hello
+      "Hello i'm kIlya"
+    end
+  end
+
+  def reverse(line)
+    line.nil? ? "Nothing to say" : line.reverse!
   end
 end
