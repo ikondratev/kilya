@@ -1,5 +1,4 @@
 #!/usr/bin/env ruby
 
 require 'kilya'
-
-Kilya.say_hi
+Kilya.reverse(ARGV[0])

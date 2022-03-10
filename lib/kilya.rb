@@ -1,11 +1,7 @@
+require 'services/string_builder'
+
 class Kilya
   class << self
-    def hello
-      "Hello i'm kIlya"
-    end
-  end
-
-  def reverse(line)
-    line.nil? ? "Nothing to say" : line.reverse!
+    include Services::StringBuilder
   end
 end
