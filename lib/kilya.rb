@@ -1,4 +1,4 @@
-# main pont
+# main point
 require 'services/string_builder'
 
 class Kilya

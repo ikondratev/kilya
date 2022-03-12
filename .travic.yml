@@ -1,0 +1,13 @@
+language: ruby
+rvm:
+  - 2.7.2
+cache: bundler
+branches:
+  only:
+    - master
+install:
+  - travis_retry bundle update
+  - gem install pdd -v 0.20.5
+script:
+  - pdd -f /dev/null
+  - bundle exec rake
