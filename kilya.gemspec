@@ -7,7 +7,7 @@ Gem::Specification.new do |s|
   s.rubygems_version = '2.7'
   s.required_ruby_version = '>=2.2'
   s.name = 'kilya'
-  s.version = '0.0.5'
+  s.version = '0.0.6'
   s.executables << 'kilya'
   s.license = 'MIT'
   s.summary = 'Simple first Ruby gem'
