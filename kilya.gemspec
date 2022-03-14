@@ -7,7 +7,7 @@ Gem::Specification.new do |s|
   s.rubygems_version = '2.7'
   s.required_ruby_version = '>=2.2'
   s.name = 'kilya'
-  s.version = '0.0.6'
+  s.version = '0.0.7'
   s.executables << 'kilya'
   s.license = 'MIT'
   s.summary = 'Simple first Ruby gem'
@@ -16,4 +16,5 @@ Gem::Specification.new do |s|
   s.email = 'ilyafulleveline@gmail.com'
   s.homepage = 'https://github.com/ikondratev/kilya'
   s.files = `git ls-files`.split($RS)
+  s.add_dependency 'faraday', '2.2'
 end
