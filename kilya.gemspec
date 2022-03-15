@@ -16,5 +16,5 @@ Gem::Specification.new do |s|
   s.email = 'ilyafulleveline@gmail.com'
   s.homepage = 'https://github.com/ikondratev/kilya'
   s.files = `git ls-files`.split($RS)
-  s.add_dependency 'faraday'
+  s.add_dependency 'faraday', '2.2'
 end
