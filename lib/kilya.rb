@@ -15,9 +15,9 @@ class Kilya
   class << self
     include Services::StringBuilder
 
-    def request(path)
+    def request(url)
       requester = Services::Requester.new
-      requester.request(url: path)
+      requester.request(url: url)
     end
   end
 end
