@@ -11,6 +11,7 @@ class TestKilya < Minitest::Test
   end
 
   def test_fatrady_request
-    assert_equal(301, Kilya.request("http://google.com").status)
+    result = Kilya.request("http://google.com")
+    assert_equal(301, result.dig(:status))
   end
 end
