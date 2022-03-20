@@ -25,6 +25,7 @@
 module Services
   module StringBuilder
     class StringBuilderError < StandardError; end
+
     # @param [String] line
     # @return [String]
     # @raise [StringBuilderError]
