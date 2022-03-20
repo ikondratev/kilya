@@ -29,7 +29,7 @@ module Services
     # @param [String] method: default get
     # @param [String] url: example: "http://example.com"
     # @return [Hash] response
-    def request(method: "get", url:)
+    def request(url:, method: "get")
       result = Faraday.send(method, url)
       parse_response(result)
     rescue StandardError
