@@ -29,6 +29,7 @@ module Services
     # @return [String]
     # @raise [StringBuilderError]
     def reverse(line)
+
       line.nil? ? "nothing to reverse" : line.reverse!
     rescue StandardError => e
       StringBuilderError.new(e.message)
