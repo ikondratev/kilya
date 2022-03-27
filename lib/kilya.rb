@@ -26,11 +26,15 @@ require 'services/string_builder'
 require 'services/requester'
 
 class Kilya
+  def initialize
+    @request = Services::Requester.new
+  end
+
   class << self
     include Services::StringBuilder
 
     def request(url)
-      requester = Services::Requester.new
+      requester = @request || Services::Requester.new
       requester.request(url: url)
     end
   end
